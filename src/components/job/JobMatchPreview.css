@@ -1,0 +1,13 @@
+.match {
+  display: flex; flex-direction: column; gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-lg);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.match__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.match__title-wrap { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.match__title { margin: 0; font-size: 15px; font-weight: 600; color: var(--text); }
+.match__meta { margin: 0; font-size: 12px; color: var(--text-mute); }
+.match__reasoning { margin: 0; font-size: 13px; color: #B7BEC9; }
+.match__chips { display: flex; flex-wrap: wrap; gap: 6px; }

@@ -1,0 +1,43 @@
+.hitl {
+  display: flex; flex-direction: column; gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  border: 1px solid var(--amber-border);
+  box-shadow: 0 0 0 4px rgba(245, 177, 66, 0.06);
+}
+.hitl__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.hitl__head-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.hitl__icon {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--amber-sub);
+  color: var(--amber);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 600; font-size: 14px;
+}
+.hitl__title { margin: 0; font-size: 15px; font-weight: 600; color: var(--text); }
+.hitl__paused { font-family: var(--font-mono); font-size: 11px; color: var(--text-mute); }
+
+.hitl__composer {
+  display: flex;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 4px 4px 4px 12px;
+  transition: border-color 120ms ease;
+}
+.hitl__composer:focus-within { border-color: var(--accent); }
+.hitl__composer-input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  font: inherit;
+  padding: 8px 0;
+}
+.hitl__composer-input::placeholder { color: var(--text-dim); }
+
+.hitl__actions { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.hitl__actions-left, .hitl__actions-right { display: flex; gap: 8px; }

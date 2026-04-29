@@ -1,0 +1,36 @@
+.banner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px;
+  padding: 14px 24px;
+  border-bottom: 1px solid;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.banner--amber { background: var(--amber-sub); border-bottom-color: var(--amber-border); }
+.banner--violet { background: var(--accent-sub); border-bottom-color: #3F2F8C; }
+
+.banner__left { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.banner__text { font-size: 13px; font-weight: 500; color: var(--text); }
+.banner__right { display: flex; align-items: center; gap: 8px; }
+
+.banner__pulse {
+  position: relative;
+  width: 20px; height: 20px;
+  flex: 0 0 20px;
+  display: inline-block;
+}
+.banner__pulse-ring, .banner__pulse-dot {
+  position: absolute; left: 50%; top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner__pulse-ring {
+  width: 20px; height: 20px;
+  animation: pulseRing 1.6s ease-out infinite;
+}
+.banner__pulse-dot { width: 10px; height: 10px; }
+.banner__pulse--amber  .banner__pulse-ring { background: var(--amber); }
+.banner__pulse--amber  .banner__pulse-dot  { background: var(--amber); }
+.banner__pulse--violet .banner__pulse-ring { background: var(--accent); }
+.banner__pulse--violet .banner__pulse-dot  { background: var(--accent); }

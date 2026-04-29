@@ -1,0 +1,22 @@
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  gap: 16px;
+}
+.topbar__left { display: flex; align-items: center; gap: 16px; }
+.topbar__logo {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 600; font-size: 14px;
+}
+.topbar__crumb { font-size: 13px; color: var(--text-mute); font-weight: 500; }
+.topbar__crumb a { color: var(--text-mute); text-decoration: none; }
+.topbar__crumb a:hover { color: var(--text); }
+.topbar__crumb-current { color: var(--text); }
+.topbar__right { display: flex; align-items: center; gap: 12px; }
+.topbar__runtime { font-family: var(--font-mono); font-size: 12px; color: var(--text-mute); }

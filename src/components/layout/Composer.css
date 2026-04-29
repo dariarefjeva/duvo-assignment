@@ -1,0 +1,18 @@
+.composer {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 8px 10px 14px;
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: border-color 120ms ease;
+}
+.composer:focus-within { border-color: var(--accent); }
+.composer__input {
+  flex: 1;
+  background: transparent;
+  border: 0; outline: 0;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+}
+.composer__input::placeholder { color: var(--text-dim); }
